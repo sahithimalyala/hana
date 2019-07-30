@@ -1,0 +1,35 @@
+{
+  "name": "pos-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . pos-client --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"POS System\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.8",
+    "electron-packager": "^13.1.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-openui5": "^0.15.0"
+  },
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "dateformat": "^3.0.3",
+    "electron-prebuilt": "^1.4.13",
+    "express": "3.x",
+    "fs-extra": "^7.0.1",
+    "hdb": "^0.16.0",
+    "node-inspector": "0.7.x",
+    "node-watch": "^0.6.0",
+    "pg": "^7.8.2",
+    "request": "^2.88.0",
+    "velocityjs": "^1.1.3"
+  }
+}

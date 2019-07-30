@@ -1,0 +1,3 @@
+{
+    "ZOT_MAT_PLN":"INSERT INTO ZOT_MAT_PLT(MANDT,MATNR,WERKS,MENGE,MEINS,DISNT,WAERS,LPUPR,INVDT,LINQT,ERSDA,ERSTI,LAEDA,LAETI) VALUES #foreach( $row in $tables ) ('$row.MANDT','$row.MATNR','$row.WERKS','$row.MENGE','$row.MEINS','$row.DISNT','$row.WAERS','$row.LPUPR','$row.INVDT','$row.LINQT','$row.ERSDA','$row.ERSTI','$row.LAEDA','$row.LAETI'),#end'",
+}
